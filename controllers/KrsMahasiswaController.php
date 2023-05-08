@@ -19,8 +19,10 @@ class KrsMahasiswaController extends \yii\web\Controller
         return $this->render('update');
     }
 
-    public function actionDelete()
+    public function actionHapusKrs()
     {
-        return $this->render('delete');
+        return $this->render('hapus-krs');
     }
+
+    
 }

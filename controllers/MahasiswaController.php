@@ -4,9 +4,8 @@ namespace app\controllers;
 
 class MahasiswaController extends \yii\web\Controller
 {
-    public function actionProfile()
+    public function actionBatalKrs()
     {
-        return $this->render('profile');
+        return $this->render('batal-krs');
     }
-
 }
