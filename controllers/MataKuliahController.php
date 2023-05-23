@@ -1,10 +1,10 @@
 <?php
 
 namespace app\controllers;
-use app\models\Mahasiswa;
+use app\models\Matakuliah;
 use yii\data\ActiveDataProvider;
 
-class MahasiswaController extends \yii\web\Controller
+class MataKuliahController extends \yii\web\Controller
 {
     public function actionBatalKrs()
     {
@@ -13,7 +13,7 @@ class MahasiswaController extends \yii\web\Controller
 
     public function actionIndex()
     {
-        $query = Mahasiswa::find();
+        $query = Matakuliah::find();
         $dataProvider = new ActiveDataProvider(['query' => $query]);
         return $this->render('index', [
             'dataProvider' => $dataProvider
